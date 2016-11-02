@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jfK-qM-KpH">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome-->
+        <scene sceneID="hKA-jI-G4e">
+            <objects>
+                <viewController id="jfK-qM-KpH" customClass="ViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fkv-rK-xCu"/>
+                        <viewControllerLayoutGuide type="bottom" id="DO8-my-VYy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SnP-Ed-HrM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bPk-rN-Ld9">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="V1k-nM-p13"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Good" id="BOS-H9-Vmw">
+                                        <connections>
+                                            <action selector="switchViews:" destination="jfK-qM-KpH" id="k3H-C2-En3"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Y5w-PG-7NA"/>
+                                    <barButtonItem title="Pun" id="Suw-cF-BLI">
+                                        <connections>
+                                            <action selector="switchViews:" destination="jfK-qM-KpH" id="1DB-6Y-StY"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="2lu-u2-jdR"/>
+                                    <barButtonItem title="Dad" id="GYL-IF-hnw">
+                                        <connections>
+                                            <action selector="switchViews:" destination="jfK-qM-KpH" id="XpK-Xe-pGQ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Joke's App! Select category from the bar." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqb-1T-ojL">
+                                <rect key="frame" x="16" y="318.66666666666669" width="382" height="99"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="99" id="X3D-v1-Wk0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ka9-Ru-Yho">
+                                <rect key="frame" x="0.0" y="692" width="414" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="9ap-wm-T6B"/>
+                                    <barButtonItem title="Home" id="yVw-hv-rBA">
+                                        <connections>
+                                            <action selector="switchViews:" destination="jfK-qM-KpH" id="6gj-UD-HhB"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.87523566259999996" blue="0.32041625060000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ka9-Ru-Yho" firstAttribute="leading" secondItem="SnP-Ed-HrM" secondAttribute="leading" id="1qd-zp-vXQ"/>
+                            <constraint firstItem="bPk-rN-Ld9" firstAttribute="top" secondItem="SnP-Ed-HrM" secondAttribute="top" symbolic="YES" id="90Y-m3-PZp"/>
+                            <constraint firstAttribute="trailing" secondItem="bPk-rN-Ld9" secondAttribute="trailing" id="BYe-bl-B1S"/>
+                            <constraint firstItem="DO8-my-VYy" firstAttribute="top" secondItem="Ka9-Ru-Yho" secondAttribute="bottom" id="Hns-K6-Kx0"/>
+                            <constraint firstItem="vqb-1T-ojL" firstAttribute="centerX" secondItem="SnP-Ed-HrM" secondAttribute="centerX" id="epc-H3-RXj"/>
+                            <constraint firstItem="bPk-rN-Ld9" firstAttribute="top" secondItem="SnP-Ed-HrM" secondAttribute="top" id="ge2-Kc-sib"/>
+                            <constraint firstItem="bPk-rN-Ld9" firstAttribute="leading" secondItem="SnP-Ed-HrM" secondAttribute="leading" id="hnv-T4-bF2"/>
+                            <constraint firstAttribute="trailing" secondItem="Ka9-Ru-Yho" secondAttribute="trailing" id="lza-kH-FfZ"/>
+                            <constraint firstAttribute="trailing" secondItem="vqb-1T-ojL" secondAttribute="trailing" constant="16" id="mRx-70-pJf"/>
+                            <constraint firstItem="vqb-1T-ojL" firstAttribute="centerY" secondItem="SnP-Ed-HrM" secondAttribute="centerY" id="t94-oe-yzw"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Welcome" image="4AB00664-4543-4C77-9853-7D135A3054DB" selectedImage="4AB00664-4543-4C77-9853-7D135A3054DB" id="QX8-OH-lwb"/>
+                    <connections>
+                        <outlet property="bottomToolBar" destination="Ka9-Ru-Yho" id="pgU-3w-T96"/>
+                        <outlet property="homeButton" destination="yVw-hv-rBA" id="HNy-sl-1cZ"/>
+                        <outlet property="toolBar" destination="bPk-rN-Ld9" id="eU9-OG-BzH"/>
+                        <outlet property="welcomeMessage" destination="vqb-1T-ojL" id="RNd-5z-mut"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NAW-WC-W9O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-80" y="41"/>
+        </scene>
+        <!--Dad-->
+        <scene sceneID="xbp-wF-jd0">
+            <objects>
+                <viewController storyboardIdentifier="First" id="WOG-4e-nZq" customClass="FirstViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0dI-gw-qXM"/>
+                        <viewControllerLayoutGuide type="bottom" id="e8A-xo-QhM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nAF-ce-5pf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Question" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Nwh-da-cZb">
+                                <rect key="frame" x="16" y="307" width="382" height="122"/>
+                                <color key="backgroundColor" red="1" green="0.87523566259999996" blue="0.32041625060000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="122" id="b7J-YI-XzD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lck-je-Vb8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="vbp-S1-XkL"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Good" id="WrS-gF-1gz"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="JIf-Oq-ESc"/>
+                                    <barButtonItem title="Pun" id="P4q-Y6-rT4"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="hg7-J1-Ltr"/>
+                                    <barButtonItem title="Dad" id="Lse-f6-nXG"/>
+                                </items>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JFj-MJ-KQ1">
+                                <rect key="frame" x="0.0" y="692" width="414" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="9Wz-m6-ovk"/>
+                                    <barButtonItem title="Answer" id="yRd-wZ-JEg"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.87523566259999996" blue="0.32041625060000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="JFj-MJ-KQ1" secondAttribute="trailing" id="H4F-9j-sWg"/>
+                            <constraint firstItem="e8A-xo-QhM" firstAttribute="top" secondItem="JFj-MJ-KQ1" secondAttribute="bottom" id="Sv8-Do-zWI"/>
+                            <constraint firstItem="Nwh-da-cZb" firstAttribute="leading" secondItem="nAF-ce-5pf" secondAttribute="leading" constant="16" id="ZWe-tB-F3k"/>
+                            <constraint firstItem="Nwh-da-cZb" firstAttribute="centerX" secondItem="nAF-ce-5pf" secondAttribute="centerX" id="aAE-Hp-O53"/>
+                            <constraint firstItem="JFj-MJ-KQ1" firstAttribute="leading" secondItem="nAF-ce-5pf" secondAttribute="leading" id="bdb-OY-guO"/>
+                            <constraint firstItem="Nwh-da-cZb" firstAttribute="centerY" secondItem="nAF-ce-5pf" secondAttribute="centerY" id="k14-Ta-uU7"/>
+                            <constraint firstAttribute="trailing" secondItem="Nwh-da-cZb" secondAttribute="trailing" constant="16" id="kgf-rc-Sc3"/>
+                            <constraint firstItem="Lck-je-Vb8" firstAttribute="top" secondItem="nAF-ce-5pf" secondAttribute="top" id="mHo-AQ-HU1"/>
+                            <constraint firstItem="Lck-je-Vb8" firstAttribute="leading" secondItem="nAF-ce-5pf" secondAttribute="leading" id="rg6-0N-vDE"/>
+                            <constraint firstAttribute="trailing" secondItem="Lck-je-Vb8" secondAttribute="trailing" id="uYr-yX-7q7"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dad" image="second" selectedImage="second" id="oiR-y9-VMA"/>
+                    <connections>
+                        <outlet property="question" destination="Nwh-da-cZb" id="B5s-Zg-aiM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KCP-cy-lOQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="720" y="41"/>
+        </scene>
+        <!--Pun-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController storyboardIdentifier="Second" id="8rJ-Kc-sve" customClass="SecondViewController" customModule="iKid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Answer" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="qok-SF-qzz">
+                                <rect key="frame" x="20" y="307" width="374" height="122"/>
+                                <color key="backgroundColor" red="1" green="0.87523566259999996" blue="0.32041625060000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="122" id="y2m-Ki-gJ1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7sv-p1-DGE">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="krL-mO-ZNE"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Good" id="QES-Fx-Dn1"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="5D4-XN-9dV"/>
+                                    <barButtonItem title="Pun" id="BNu-QZ-Adn"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="vCR-Hh-Lm9"/>
+                                    <barButtonItem title="Dad" id="fYw-uy-gLO"/>
+                                </items>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TSz-JV-CHS">
+                                <rect key="frame" x="0.0" y="692" width="414" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="3kO-96-gHR"/>
+                                    <barButtonItem title="Home" id="P9d-XU-Jx9"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.87523566259999996" blue="0.32041625060000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7sv-p1-DGE" secondAttribute="trailing" id="5kF-6J-1P8"/>
+                            <constraint firstAttribute="trailing" secondItem="TSz-JV-CHS" secondAttribute="trailing" id="DoK-Ny-vXO"/>
+                            <constraint firstItem="7sv-p1-DGE" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="J4a-xB-UlE"/>
+                            <constraint firstItem="qok-SF-qzz" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="KCe-tH-koo"/>
+                            <constraint firstItem="qok-SF-qzz" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="dDx-Gd-R8K"/>
+                            <constraint firstItem="qok-SF-qzz" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="fa4-KQ-aHF"/>
+                            <constraint firstItem="qok-SF-qzz" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="hsq-i5-5vO"/>
+                            <constraint firstItem="7sv-p1-DGE" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="iUu-fg-YFH"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="TSz-JV-CHS" secondAttribute="bottom" id="jsE-JP-GWr"/>
+                            <constraint firstItem="TSz-JV-CHS" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="pCW-6A-kdg"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pun" image="second" selectedImage="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="answer" destination="qok-SF-qzz" id="oWH-qo-Kb4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1491" y="41"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="4AB00664-4543-4C77-9853-7D135A3054DB" width="30" height="30">
+            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGQkNYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QDwcI
+ERYbHCUmJygwMzY8P1UkbnVsbNQJCgsMDQ4PEFYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVwc1dOU0Nv
+bG9ygA4SAMAAAIACgAzSEgkTFVpOUy5vYmplY3RzoRSAA4AL0hIJFxqiGBmABIAFgAoQANUdHh8gCSEb
+IiMkVk5TU2l6ZV8QD05TQml0c1BlclNhbXBsZV8QEE5TQ29sb3JTcGFjZU5hbWVZTlNQREZEYXRhgAaA
+B4AIgAlYezMwLCAzMH1fEBlOU0NhbGlicmF0ZWRSR0JDb2xvclNwYWNlTxEJoSVQREYtMS4zCiXE5fLl
+66fzoNDExgo0IDAgb2JqCjw8IC9MZW5ndGggNSAwIFIgL0ZpbHRlciAvRmxhdGVEZWNvZGUgPj4Kc3Ry
+ZWFtCngBK1QIVChU0HcuNlRILlYwAMPiZAUjUwVDU4VcEG1koGdiYWphgsQASwKlkhUs9UwNTQzNjIAK
+uZCUghUkK5gi5OEKwVIgrXBzgfqQFIJt5kpWyFBI01IIBAAz3x/FCmVuZHN0cmVhbQplbmRvYmoKNSAw
+IG9iago5NQplbmRvYmoKMiAwIG9iago8PCAvVHlwZSAvUGFnZSAvUGFyZW50IDMgMCBSIC9SZXNvdXJj
+ZXMgNiAwIFIgL0NvbnRlbnRzIDQgMCBSID4+CmVuZG9iago2IDAgb2JqCjw8IC9Qcm9jU2V0IFsgL1BE
+RiBdIC9Db2xvclNwYWNlIDw8IC9DczEgNyAwIFIgPj4gPj4KZW5kb2JqCjggMCBvYmoKPDwgL0xlbmd0
+aCA5IDAgUiAvTiAzIC9BbHRlcm5hdGUgL0RldmljZVJHQiAvRmlsdGVyIC9GbGF0ZURlY29kZSA+Pgpz
+dHJlYW0KeAGFVd9v21QUPolvUqQWPyBYR4eKxa9VU1u5GxqtxgZJk6XtShal6dgqJOQ6N4mpGwfb6baq
+T3uBNwb8AUDZAw9IPCENBmJ72fbAtElThyqqSUh76MQPISbtBVXhu3ZiJ1PEXPX6yznfOec7517bRD1f
+abWaGVWIlquunc8klZOnFpSeTYrSs9RLA9Sr6U4tkcvNEi7BFffO6+EdigjL7ZHu/k72I796i9zRiSJP
+wG4VHX0Z+AxRzNRrtksUvwf7+Gm3BtzzHPDTNgQCqwKXfZwSeNHHJz1OIT8JjtAq6xWtCLwGPLzYZi+3
+YV8DGMiT4VVuG7oiZpGzrZJhcs/hL49xtzH/Dy6bdfTsXYNY+5yluWO4D4neK/ZUvok/17X0HPBLsF+v
+uUlhfwX4j/rSfAJ4H1H0qZJ9dN7nR19frRTeBt4Fe9FwpwtN+2p1MXscGLHR9SXrmMgjONd1ZxKzpBeA
+71b4tNhj6JGoyFNp4GHgwUp9qplfmnFW5oTdy7NamcwCI49kv6fN5IAHgD+0rbyoBc3SOjczohbyS1dr
+bq6pQdqumllRC/0ymTtej8gpbbuVwpQfyw66dqEZyxZKxtHpJn+tZnpnEdrYBbueF9qQn93S7HQGGHnY
+P7w6L+YGHNtd1FJitqPAR+hERCNOFi1i1alKO6RQnjKUxL1GNjwlMsiEhcPLYTEiT9ISbN15OY/jx4SM
+she9LaJRpTvHr3C/ybFYP1PZAfwfYrPsMBtnE6SwN9ib7AhLwTrBDgUKcm06FSrTfSj187xPdVQWOk5Q
+8vxAfSiIUc7Z7xr6zY/+hpqwSyv0I0/QMTRb7RMgBxNodTfSPqdraz/sDjzKBrv4zu2+a2t0/HHzjd2L
+bcc2sG7GtsL42K+xLfxtUgI7YHqKlqHK8HbCCXgjHT1cAdMlDetv4FnQ2lLasaOl6vmB0CMmwT/IPszS
+ueHQqv6i/qluqF+oF9TfO2qEGTumJH0qfSv9KH0nfS/9TIp0Wboi/SRdlb6RLgU5u++9nyXYe69fYRPd
+il1o1WufNSdTTsp75BfllPy8/LI8G7AUuV8ek6fkvfDsCfbNDP0dvRh0CrNqTbV7LfEEGDQPJQadBtfG
+VMWEq3QWWdufk6ZSNsjG2PQjp3ZcnOWWing6noonSInvi0/Ex+IzAreevPhe+CawpgP1/pMTMDo64G0s
+TCXIM+KdOnFWRfQKdJvQzV1+Bt8OokmrdtY2yhVX2a+qrykJfMq4Ml3VR4cVzTQVz+UoNne4vcKLoyS+
+gyKO6EHe+75Fdt0Mbe5bRIf/wjvrVmhbqBN97RD1vxrahvBOfOYzoosH9bq94uejSOQGkVM6sN/7HelL
+4t10t9F4gPdVzydEOx83Gv+uNxo7XyL/FtFl8z9ZAHF4CmVuZHN0cmVhbQplbmRvYmoKOSAwIG9iagox
+MDQ3CmVuZG9iago3IDAgb2JqClsgL0lDQ0Jhc2VkIDggMCBSIF0KZW5kb2JqCjMgMCBvYmoKPDwgL1R5
+cGUgL1BhZ2VzIC9NZWRpYUJveCBbMCAwIDMwIDMwXSAvQ291bnQgMSAvS2lkcyBbIDIgMCBSIF0gPj4K
+ZW5kb2JqCjEwIDAgb2JqCjw8IC9UeXBlIC9DYXRhbG9nIC9QYWdlcyAzIDAgUiA+PgplbmRvYmoKMTEg
+MCBvYmoKKE5ldyBJbWFnZSkKZW5kb2JqCjEyIDAgb2JqCihNYWMgT1MgWCAxMC4xMCBRdWFydHogUERG
+Q29udGV4dCkKZW5kb2JqCjEzIDAgb2JqCihBbGV4IFJhZnRpcykKZW5kb2JqCjE0IDAgb2JqCihPcGFj
+aXR5KQplbmRvYmoKMTUgMCBvYmoKKEQ6MjAxNDA3MzEyMzI4NTFaMDAnMDAnKQplbmRvYmoKMSAwIG9i
+ago8PCAvVGl0bGUgMTEgMCBSIC9BdXRob3IgMTMgMCBSIC9Qcm9kdWNlciAxMiAwIFIgL0NyZWF0b3Ig
+MTQgMCBSIC9DcmVhdGlvbkRhdGUKMTUgMCBSIC9Nb2REYXRlIDE1IDAgUiA+PgplbmRvYmoKeHJlZgow
+IDE2CjAwMDAwMDAwMDAgNjU1MzUgZiAKMDAwMDAwMTg2OCAwMDAwMCBuIAowMDAwMDAwMjA5IDAwMDAw
+IG4gCjAwMDAwMDE1NjAgMDAwMDAgbiAKMDAwMDAwMDAyMiAwMDAwMCBuIAowMDAwMDAwMTkxIDAwMDAw
+IG4gCjAwMDAwMDAyODkgMDAwMDAgbiAKMDAwMDAwMTUyNSAwMDAwMCBuIAowMDAwMDAwMzU3IDAwMDAw
+IG4gCjAwMDAwMDE1MDUgMDAwMDAgbiAKMDAwMDAwMTY0MSAwMDAwMCBuIAowMDAwMDAxNjkxIDAwMDAw
+IG4gCjAwMDAwMDE3MTkgMDAwMDAgbiAKMDAwMDAwMTc3MCAwMDAwMCBuIAowMDAwMDAxODAwIDAwMDAw
+IG4gCjAwMDAwMDE4MjYgMDAwMDAgbiAKdHJhaWxlcgo8PCAvU2l6ZSAxNiAvUm9vdCAxMCAwIFIgL0lu
+Zm8gMSAwIFIgL0lEIFsgPGM3MTkyMGM1OTFiMDJlZTI5N2FlODNmY2IxNDZkNTUxPgo8YzcxOTIwYzU5
+MWIwMmVlMjk3YWU4M2ZjYjE0NmQ1NTE+IF0gPj4Kc3RhcnR4cmVmCjE5ODgKJSVFT0YK0ikqKyxaJGNs
+YXNzbmFtZVgkY2xhc3Nlc11OU1BERkltYWdlUmVwoy0uL11OU1BERkltYWdlUmVwWk5TSW1hZ2VSZXBY
+TlNPYmplY3TSKSoxMldOU0FycmF5ojEv0ikqNDVeTlNNdXRhYmxlQXJyYXmjNDEv0zc4CTk6O1dOU1do
+aXRlXE5TQ29sb3JTcGFjZUQwIDAAEAOADdIpKj0+V05TQ29sb3KiPS/SKSpAQVdOU0ltYWdlokAvXxAP
+TlNLZXllZEFyY2hpdmVy0URFVHJvb3SAAQAIABEAGgAjAC0AMgA3AEkATwBYAF8AbABzAHsAfQCCAIQA
+hgCLAJYAmACaAJwAoQCkAKYAqACqAKwAtwC+ANAA4wDtAO8A8QDzAPUA/gEaCr8KxArPCtgK5grqCvgL
+AwsMCxELGQscCyELMAs0CzsLQwtQC1ULVwtZC14LZgtpC24Ldgt5C4sLjguTAAAAAAAAAgEAAAAAAAAA
+RgAAAAAAAAAAAAAAAAAAC5U
+</mutableData>
+        </image>
+        <image name="second" width="30" height="30"/>
+    </resources>
+</document>
